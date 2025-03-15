@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "devvit-webview-vue",
+  "version": "0.0.1",
+  "license": "MIT Lience",
+  "author": "shashankx86",
+  "type": "module",
+  "dependencies": {
+    "@devvit/public-api": "0.11.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.6.2",
+    "typescript": "5.3.2",
+    "vite": "^4.5.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vue": "^3.5.13",
+    "vue-tsc": "^1.8.27"
+  },
+  "scripts": {
+    "dev": "vite --config web-src/vite.config.ts",
+    "build": "vue-tsc --noEmit -p tsconfig.build.json && vite build --config web-src/vite.config.ts",
+    "preview": "vite preview --config web-src/vite.config.ts"
+  }
+}
